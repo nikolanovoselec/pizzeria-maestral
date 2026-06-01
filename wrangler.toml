@@ -1,5 +1,9 @@
 name = "pizzeria-maestral"
 compatibility_date = "2026-06-01"
 
+routes = [
+  { pattern = "paolo.novoselec.ch", custom_domain = true }
+]
+
 [assets]
 directory = "./public"
