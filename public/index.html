@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzeria Maestral - Wood-fired pizza in the heart of Zadar</title>
+  <meta name="description" content="A family-run wood-fired pizzeria on Zadar's old town. Hand-stretched dough, San Marzano tomatoes, and Dalmatian flavours since 1987." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__brand-mark">M</span>
+        <span class="nav__brand-name">Pizzeria Maestral</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our story</a>
+        <a href="#visit">Visit</a>
+        <a href="#visit" class="nav__cta">Book a table</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light">Zadar &middot; Stari Grad &middot; Since 1987</p>
+        <h1 class="hero__title">Wood-fired<br />by the Adriatic.</h1>
+        <p class="hero__lead">
+          Three generations, one stone oven, and a dough we still stretch by hand every
+          morning. Pull up a chair on the old town's narrow street and stay a while.
+        </p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--primary">See the menu</a>
+          <a href="#visit" class="btn btn--ghost">Find us &amp; book</a>
+        </div>
+      </div>
+      <a href="#highlights" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights" id="highlights">
+      <div class="container highlights__grid reveal">
+        <div class="highlight">
+          <span class="highlight__num">72h</span>
+          <p>Slow-risen dough, fermented three days for a lighter, crisper crust.</p>
+        </div>
+        <div class="highlight">
+          <span class="highlight__num">485&deg;C</span>
+          <p>Baked in 90 seconds in a wood oven fired with Dalmatian oak.</p>
+        </div>
+        <div class="highlight">
+          <span class="highlight__num">1987</span>
+          <p>Run by the same family from the same corner of Zadar's Kalelarga.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+      <div class="container story__grid">
+        <div class="story__media reveal" aria-hidden="true">
+          <div class="story__photo story__photo--1"></div>
+          <div class="story__photo story__photo--2"></div>
+        </div>
+        <div class="story__text reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 class="section-title">A family, a flame,<br />and a very small kitchen.</h2>
+          <p>
+            In 1987, Ante and Marija opened a six-table room just off the Kalelarga with
+            a borrowed oven and a recipe from Ante's grandmother in the hills behind
+            Zadar. The pizza was simple, the tomatoes were real, and the regulars never
+            left.
+          </p>
+          <p>
+            Today their children run the pass and their grandchildren clear the tables,
+            but nothing important has changed. The dough still rises overnight. The
+            mozzarella still comes from the same farm across the channel. And the oak
+            still crackles every evening as the sun drops behind the islands.
+          </p>
+          <p class="story__sign">- The Maretic family</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="menu__head reveal">
+          <p class="eyebrow">The menu</p>
+          <h2 class="section-title">From the stone oven.</h2>
+          <p class="menu__note">
+            Every pizza on a 30cm hand-stretched base. Gluten-free dough available -
+            just ask. Prices in euro.
+          </p>
+        </div>
+
+        <div class="menu__grid">
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Margherita</h3>
+              <span class="dish__price">&euro;9</span>
+            </div>
+            <p>San Marzano tomato, fior di latte, fresh basil, Pag olive oil.</p>
+            <span class="dish__tag">The classic</span>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Dalmatinka</h3>
+              <span class="dish__price">&euro;14</span>
+            </div>
+            <p>Tomato, mozzarella, Drni&scaron; pr&scaron;ut, rocket, shaved Pag cheese.</p>
+            <span class="dish__tag dish__tag--star">House favourite</span>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Maestral</h3>
+              <span class="dish__price">&euro;16</span>
+            </div>
+            <p>Adriatic shrimp, garlic, cherry tomato, parsley, a squeeze of lemon.</p>
+            <span class="dish__tag">From the sea</span>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Capricciosa</h3>
+              <span class="dish__price">&euro;12</span>
+            </div>
+            <p>Tomato, mozzarella, ham, mushrooms, artichoke, Istrian olives.</p>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Quattro Formaggi</h3>
+              <span class="dish__price">&euro;13</span>
+            </div>
+            <p>Mozzarella, gorgonzola, Pag sheep cheese, smoked scamorza, honey.</p>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Bura</h3>
+              <span class="dish__price">&euro;13</span>
+            </div>
+            <p>Spicy soppressata, &rsquo;nduja, tomato, mozzarella, chilli, oregano.</p>
+            <span class="dish__tag">Hot</span>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Orto</h3>
+              <span class="dish__price">&euro;12</span>
+            </div>
+            <p>Grilled courgette, aubergine, pepper, cherry tomato, basil pesto.</p>
+            <span class="dish__tag">Vegetarian</span>
+          </article>
+
+          <article class="dish reveal">
+            <div class="dish__head">
+              <h3>Marinara</h3>
+              <span class="dish__price">&euro;8</span>
+            </div>
+            <p>San Marzano tomato, garlic, oregano, olive oil. No cheese, all soul.</p>
+          </article>
+
+        </div>
+
+        <p class="menu__foot reveal">
+          Antipasti, Dalmatian salads, house wine from the Ravni Kotari hills, and
+          homemade rozata for dessert - ask your server for today's specials.
+        </p>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info reveal">
+          <p class="eyebrow eyebrow--light">Visit us</p>
+          <h2 class="section-title">Find a table on the Kalelarga.</h2>
+
+          <div class="visit__rows">
+            <div class="visit__row">
+              <h3>Where</h3>
+              <p>Ulica &Scaron;iroka 14<br />23000 Zadar, Croatia</p>
+            </div>
+            <div class="visit__row">
+              <h3>Hours</h3>
+              <p>
+                Mon - Thu &middot; 12:00 - 23:00<br />
+                Fri - Sat &middot; 12:00 - 24:00<br />
+                Sunday &middot; 12:00 - 22:00
+              </p>
+            </div>
+            <div class="visit__row">
+              <h3>Reservations</h3>
+              <p>
+                <a href="tel:+38523000000">+385 23 000 000</a><br />
+                <a href="mailto:dobrodosli@maestral.example">dobrodosli@maestral.example</a>
+              </p>
+            </div>
+          </div>
+
+          <a href="tel:+38523000000" class="btn btn--primary">Call to book</a>
+        </div>
+
+        <div class="visit__card reveal">
+          <form class="booking" id="bookingForm" novalidate>
+            <h3>Request a table</h3>
+            <p class="booking__sub">We'll call you back to confirm.</p>
+
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <div class="booking__row">
+              <label>
+                <span>Date</span>
+                <input type="date" name="date" required />
+              </label>
+              <label>
+                <span>Guests</span>
+                <select name="guests">
+                  <option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7+</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span>Phone</span>
+              <input type="tel" name="phone" required placeholder="+385 ..." />
+            </label>
+
+            <button type="submit" class="btn btn--primary btn--block">Send request</button>
+            <p class="booking__msg" id="bookingMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__brand-mark">M</span>
+        <span>Pizzeria Maestral</span>
+      </div>
+      <p class="footer__line">Wood-fired by the Adriatic since 1987 &middot; Zadar, Croatia</p>
+      <p class="footer__small">&copy; <span id="year">2026</span> Pizzeria Maestral. Made with flour, fire and salt.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
